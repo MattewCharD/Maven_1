@@ -1,16 +1,19 @@
 package it.ciardi;
 
-public class MyThread extends Thread{
-    private int lun;
+public class MyThread implements Runnable{//extends Thread{*/
 
-    public MyThread(int l){
-        lun=l;
-    }
+
+    
+    // private int lun;
+
+    // public MyThread(int l){
+    //     lun=l;
+    // }
 
     // devo assolutamente implementare la classe run quando estendo thread
     public void run(){
         // System.out.println("Ciao sono ; " + Thread.currentThread().getName());
-        for (int i = 0; i < lun; i++) {
+        for (int i = 0; i < /*lun*/10; i++) {
            System.out.println(Thread.currentThread().getName() + " : "+i);  
         }
 
