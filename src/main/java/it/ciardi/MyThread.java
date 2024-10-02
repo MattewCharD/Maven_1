@@ -13,7 +13,7 @@ public class MyThread implements Runnable{//extends Thread{*/
     // devo assolutamente implementare la classe run quando estendo thread
     public void run(){
         // System.out.println("Ciao sono ; " + Thread.currentThread().getName());
-        for (int i = 0; i < /*lun*/10; i++) {
+        for (int i = 0; i < /*lun*/1000; i++) {
            System.out.println(Thread.currentThread().getName() + " : "+i);  
         }
 
